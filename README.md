@@ -10,7 +10,7 @@
 ## Prerequisites
 
 - Node.js v22.14.0 (as specified in `.nvmrc`)
-- npm (comes with Node.js)
+- pnpm
 
 ## Getting Started
 
@@ -24,28 +24,28 @@ cd memest
 2. Install dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 3. Run the development server:
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 4. Build for production:
 
 ```bash
-npm run build
+pnpm build
 ```
 
 ## Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-- `npm run lint:fix` - Fix ESLint issues
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm preview` - Preview production build
+- `pnpm lint` - Run ESLint
+- `pnpm lint:fix` - Fix ESLint issues
 
 ## Project Structure
 
