@@ -16,5 +16,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   adapter: vercel(),
-  experimental: { session: false },
+  session: {
+    driver: "redis",
+  },
 });
