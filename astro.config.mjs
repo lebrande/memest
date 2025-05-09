@@ -16,5 +16,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   adapter: vercel(),
-  experimental: { session: true },
+  experimental: { session: false },
 });
