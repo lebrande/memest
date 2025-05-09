@@ -1,6 +1,4 @@
-# 10x Astro Starter
-
-A modern, opinionated starter template for building fast, accessible, and AI-friendly web applications.
+# memest
 
 ## Tech Stack
 
@@ -19,8 +17,8 @@ A modern, opinionated starter template for building fast, accessible, and AI-fri
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/przeprogramowani/10x-astro-starter.git
-cd 10x-astro-starter
+git clone https://github.com/lebrande/memest.git
+cd memest
 ```
 
 2. Install dependencies:
