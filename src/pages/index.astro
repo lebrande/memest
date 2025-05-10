@@ -1,8 +1,16 @@
 ---
-import Home from "../components/Home.astro";
-import Layout from "../layouts/Layout.astro";
+import Navigation from "@/components/navigation.astro";
+import Layout from "@/layouts/layout.astro";
+import Hero from "@/components/hero.astro";
+import Giveaways from "@/components/giveaways.astro";
 ---
 
 <Layout>
-  <Home />
+  <Navigation />
+  <Hero 
+    badgeText="Earn up to $500 by just a single meme"
+    title="🏆 Generate. Post. Earn."
+    description="Compete for USDC rewards - turn your tweets into crypto gains!"
+  />
+  <Giveaways />
 </Layout>

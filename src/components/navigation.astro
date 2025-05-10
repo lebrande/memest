@@ -1,34 +1,36 @@
 ---
+import { Button } from "@/components/ui/button";
+import { NavigationLink } from "@/components/navigation-link";
 import { SearchIcon } from "lucide-react";
 ---
 
 <header class="container mx-auto px-4 py-4 flex items-center justify-between">
   <div class="flex items-center gap-8">
     <div class="flex items-center">
-      <div class="bg-black text-white font-bold px-2 py-1 rounded-md">Pump</div>
-      <div class="bg-black text-white px-2 py-1 rounded-md">Social</div>
+      <img src="/assets/logo.svg" alt="Pump.Social" />
     </div>
     <nav class="hidden md:flex items-center gap-6">
-      <a href="#" class="flex items-center text-sm font-medium">
-        <span class="w-2 h-2 rounded-full bg-[#66ff00] mr-2"></span>
+      <NavigationLink href="/" isActive={Astro.url.pathname === "/"}>
         Home
-      </a>
-      <a href="#" class="text-sm font-medium text-[#637381]">
+      </NavigationLink>
+      <NavigationLink href="/explore" isActive={Astro.url.pathname === "/explore"}>
         Explore
-      </a>
-      <a href="#" class="text-sm font-medium text-[#637381]">
+      </NavigationLink>
+      <NavigationLink href="/my-giveaways" isActive={Astro.url.pathname === "/my-giveaways"}>
         My Giveaways
-      </a>
+      </NavigationLink>
     </nav>
   </div>
   <div class="flex items-center gap-4">
-    <button class="text-[#637381]">
+    <button class="text-muted-foreground">
       <SearchIcon size={20} />
     </button>
-    <button class="bg-[#212b36] text-white rounded-md px-4 py-2 text-sm font-medium flex items-center">
+    <Button>
       <span class="mr-1">+</span> Create Giveaway
-    </button>
-    <button class="bg-[#212b36] text-white rounded-md px-4 py-2 text-sm font-medium">Connect</button>
+    </Button>
+    <Button>
+      Connect
+    </Button>
   </div>
 </header>
 
