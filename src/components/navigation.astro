@@ -10,12 +10,8 @@ import { SearchIcon } from "lucide-react";
       <img src="/assets/logo.svg" alt="Pump.Social" />
     </div>
     <nav class="hidden md:flex items-center gap-6">
-      <NavigationLink href="/" isActive={Astro.url.pathname === "/"}>
-        Home
-      </NavigationLink>
-      <NavigationLink href="/explore" isActive={Astro.url.pathname === "/explore"}>
-        Explore
-      </NavigationLink>
+      <NavigationLink href="/" isActive={Astro.url.pathname === "/"}>Home</NavigationLink>
+      <NavigationLink href="/explore" isActive={Astro.url.pathname === "/explore"}>Explore</NavigationLink>
       <NavigationLink href="/my-giveaways" isActive={Astro.url.pathname === "/my-giveaways"}>
         My Giveaways
       </NavigationLink>
@@ -28,9 +24,6 @@ import { SearchIcon } from "lucide-react";
     <Button>
       <span class="mr-1">+</span> Create Giveaway
     </Button>
-    <Button>
-      Connect
-    </Button>
+    <Button> Connect </Button>
   </div>
 </header>
-
