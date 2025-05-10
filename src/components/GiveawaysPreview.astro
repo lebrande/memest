@@ -1,6 +1,6 @@
 ---
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
-import { Picture } from "astro:assets";
+import { Image } from "astro:assets";
 
 import dogeAiImage from "@/assets/memes/doge-ai.png";
 import pepeForkImage from "@/assets/memes/pepe-fork.png";
@@ -44,12 +44,11 @@ const giveaways = [
               <span>:</span>
               <div class="bg-[#212b36] text-white text-xs px-2 py-1 rounded-md">40</div>
             </div>
-            <Picture
+            <Image
               src={giveaway.image}
               alt={giveaway.name}
               width={140}
               densities={[1.5, 2]}
-              formats={["avif", "webp"]}
               class="rounded-full mx-auto"
             />
           </div>
