@@ -124,3 +124,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+@theme {
+  --breakpoint-xl: 72rem;
+  --breakpoint-2xl: initial;
+}
