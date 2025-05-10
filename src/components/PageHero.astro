@@ -32,7 +32,7 @@ const { badgeText, title, description } = Astro.props;
             <ChevronRightIcon size={18} className="ml-1" />
           </Button>
         </div>
-        <Picture src={heroImage} alt="Hero Image" width={400} densities={[1.5, 2]} formats={['avif', 'webp']} />
+        <img src={heroImage.src} alt="Hero Image" width={400} />
       </div>
       <div class="flex justify-center gap-2 absolute bottom-6 left-1/2 transform -translate-x-1/2">
         <div class="w-2 h-2 rounded-full bg-[#637381]/30"></div>
