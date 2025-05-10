@@ -1,0 +1,29 @@
+---
+import { Button } from "@/components/ui/button";
+import { NavigationLink } from "@/components/navigation-link";
+import { SearchIcon } from "lucide-react";
+---
+
+<header class="container mx-auto px-4 py-4 flex items-center justify-between">
+  <div class="flex items-center gap-8">
+    <div class="flex items-center">
+      <img src="/assets/logo.svg" alt="Pump.Social" />
+    </div>
+    <nav class="hidden md:flex items-center gap-6">
+      <NavigationLink href="/" isActive={Astro.url.pathname === "/"}>Home</NavigationLink>
+      <NavigationLink href="/explore" isActive={Astro.url.pathname === "/explore"}>Explore</NavigationLink>
+      <NavigationLink href="/my-giveaways" isActive={Astro.url.pathname === "/my-giveaways"}>
+        My Giveaways
+      </NavigationLink>
+    </nav>
+  </div>
+  <div class="flex items-center gap-4">
+    <button class="text-muted-foreground">
+      <SearchIcon size={20} />
+    </button>
+    <Button>
+      <span class="mr-1">+</span> Create Giveaway
+    </Button>
+    <Button> Connect </Button>
+  </div>
+</header>

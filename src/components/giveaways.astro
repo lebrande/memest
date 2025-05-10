@@ -1,0 +1,53 @@
+---
+import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
+---
+
+<section class="container mx-auto px-4 py-8">
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-2xl font-bold text-[#212b36] flex items-center">🔥 Hot Giveaways</h2>
+    <div class="flex gap-2">
+      <button class="p-2 rounded-full border border-[#637381]/20">
+        <ChevronLeftIcon size={18} />
+      </button>
+      <button class="p-2 rounded-full border border-[#637381]/20">
+        <ChevronRightIcon size={18} />
+      </button>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+    {
+      [
+        { name: "DOGE AI", image: "/placeholder.svg?height=120&width=120" },
+        { name: "PEPE FORK", image: "/placeholder.svg?height=120&width=120" },
+        { name: "STONKS", image: "/placeholder.svg?height=120&width=120" },
+        { name: "Bulb", image: "/placeholder.svg?height=120&width=120" },
+        { name: "Base God", image: "/placeholder.svg?height=120&width=120" },
+        { name: "Vita Inu", image: "/placeholder.svg?height=120&width=120" },
+      ].map((giveaway) => (
+        <div class="bg-white rounded-xl border border-[#637381]/10 p-4 flex flex-col items-center">
+          <div class="relative mb-2">
+            <div class="absolute top-0 left-0 bg-[#212b36] text-white text-xs px-2 py-1 rounded-md">02 : 03 : 40</div>
+            <img
+              src={giveaway.image || "/placeholder.svg"}
+              alt={giveaway.name}
+              width={120}
+              height={120}
+              class="rounded-full"
+            />
+          </div>
+          <h3 class="font-bold text-[#212b36] mb-2">{giveaway.name}</h3>
+          <div class="flex items-center mb-3">
+            <div class="flex -space-x-2">
+              <div class="w-6 h-6 rounded-full bg-pink-300 border-2 border-white" />
+              <div class="w-6 h-6 rounded-full bg-blue-300 border-2 border-white" />
+              <div class="w-6 h-6 rounded-full bg-purple-300 border-2 border-white" />
+            </div>
+            <span class="text-sm text-[#637381] ml-1">+999</span>
+          </div>
+          <button class="w-full bg-[#66ff00] text-[#040404] text-sm font-medium py-1 rounded-md">$500 USDC</button>
+        </div>
+      ))
+    }
+  </div>
+</section>
